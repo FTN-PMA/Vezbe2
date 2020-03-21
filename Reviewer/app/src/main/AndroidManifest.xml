@@ -34,16 +34,6 @@
         </activity>
 
         <activity
-            android:name="rs.reviewer.activities.ReviewerPreferenceActivity"
-            android:label="@string/preferences"
-            android:parentActivityName=".MainActivity">
-
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-
-        </activity>
-        <activity
             android:name=".activities.SecondActivity"
             android:label="@string/second_activity"
             android:theme="@style/AppTheme.NoActionBar"/>
