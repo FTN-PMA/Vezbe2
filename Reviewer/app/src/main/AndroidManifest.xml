@@ -8,9 +8,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-
     <uses-permission android:name="android.permission.CAMERA"/>
-
 
     <application
         android:allowBackup="true"
@@ -23,17 +21,11 @@
             android:name="rs.reviewer.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
         </activity>
 
         <activity
             android:name=".activities.SplashScreenActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -51,11 +43,10 @@
                 android:value=".MainActivity" />
 
         </activity>
-
-
+        <activity
+            android:name=".activities.SecondActivity"
+            android:label="@string/second_activity"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
-
-
-
 
 </manifest>
