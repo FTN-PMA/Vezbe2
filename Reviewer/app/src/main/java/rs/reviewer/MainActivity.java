@@ -1,6 +1,5 @@
 package rs.reviewer;
 
-import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.Menu;
@@ -18,7 +17,6 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import model.NavItem;
-import rs.reviewer.activities.SecondActivity;
 import rs.reviewer.adapters.DrawerListAdapter;
 import rs.reviewer.fragments.MyFragment;
 import rs.reviewer.tools.FragmentTransition;
@@ -135,10 +133,6 @@ public class MainActivity extends AppCompatActivity {
         if(position != 4) {
         	setTitle(mNavItems.get(position).getmTitle());
             FragmentTransition.to(MyFragment.newInstance(), this, false);
-        }else{
-            Intent i = new Intent(MainActivity.this, SecondActivity.class);
-            i.putExtra("KEY", "SOME VALUE");
-            startActivity(i);
         }
         mDrawerLayout.closeDrawer(mDrawerPane);
     }
