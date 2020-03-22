@@ -11,10 +11,7 @@ import rs.reviewer.R;
 public class MyFragment extends Fragment {
 
 	public static MyFragment newInstance() {
-		
-		MyFragment mpf = new MyFragment();
-		
-		return mpf;
+        return new MyFragment();
 	}
 
 	@Override

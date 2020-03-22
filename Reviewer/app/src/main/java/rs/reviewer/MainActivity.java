@@ -13,13 +13,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /*
+        * Fragmenti ne mogu da postoje samostalno, njih 'lepimo' na aktivnosti.
+        * Pogledati detalje ovih metoda.
+        * */
         FragmentTransition.to(MyFragment.newInstance(), this, false, R.id.upView);
         FragmentTransition.to(MySecondFragment.newInstance("FTN"), this, false, R.id.downView);
     }
     
     @Override
     protected void onResume() {
-    	// TODO Auto-generated method stub
     	super.onResume();
     }
 }
