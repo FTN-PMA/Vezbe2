@@ -19,10 +19,7 @@ public class MyFragment extends Fragment {
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup vg, Bundle data) {
-
-		View view = inflater.inflate(R.layout.map_layout, vg, false);
-
-		return view;
+        return inflater.inflate(R.layout.myfragment_layout, vg, false);
 	}
 
     @Override
